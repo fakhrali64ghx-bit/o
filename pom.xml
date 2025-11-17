@@ -18,9 +18,6 @@
         <junit.version>5.11.0</junit.version>
         <sqlite.version>3.42.0.0</sqlite.version>
         <jacoco.version>0.8.11</jacoco.version>
-
-        <!-- SonarCloud Organization -->
-        <sonar.organization>mirfaqjavaid</sonar.organization>
     </properties>
 
     <dependencies>
@@ -42,7 +39,8 @@
 
     <build>
         <plugins>
-            <!-- Compiler Plugin -->
+
+            <!-- Compiler -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -53,7 +51,7 @@
                 </configuration>
             </plugin>
 
-            <!-- Maven Surefire Plugin -->
+            <!-- Surefire for tests -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -67,7 +65,7 @@
                 </configuration>
             </plugin>
 
-            <!-- JaCoCo Plugin -->
+            <!-- JaCoCo for coverage -->
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
@@ -96,7 +94,7 @@
                 </executions>
             </plugin>
 
-            <!-- Sonar Scanner Plugin -->
+            <!-- Sonar Scanner -->
             <plugin>
                 <groupId>org.sonarsource.scanner.maven</groupId>
                 <artifactId>sonar-maven-plugin</artifactId>
