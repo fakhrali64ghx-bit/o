@@ -19,11 +19,12 @@
         <sqlite.version>3.42.0.0</sqlite.version>
         <jacoco.version>0.8.11</jacoco.version>
 
-        <!-- SonarCloud Organization -->
-        <sonar.organization>mirfaqjavaid</sonar.organization>
+        <!-- Your SonarCloud organization -->
+        <sonar.organization>fakhrali64ghx-bit</sonar.organization>
     </properties>
 
     <dependencies>
+
         <!-- SQLite JDBC -->
         <dependency>
             <groupId>org.xerial</groupId>
@@ -38,10 +39,12 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
 
     <build>
         <plugins>
+
             <!-- Compiler Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -53,7 +56,7 @@
                 </configuration>
             </plugin>
 
-            <!-- Maven Surefire Plugin -->
+            <!-- Surefire Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -67,7 +70,7 @@
                 </configuration>
             </plugin>
 
-            <!-- JaCoCo Plugin -->
+            <!-- Jacoco Plugin -->
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
@@ -96,11 +99,11 @@
                 </executions>
             </plugin>
 
-            <!-- Sonar Scanner Plugin -->
+            <!-- Sonar Scanner -->
             <plugin>
                 <groupId>org.sonarsource.scanner.maven</groupId>
                 <artifactId>sonar-maven-plugin</artifactId>
-                <version>3.9.1.2184</version>
+                <version>4.0.0.4121</version>
             </plugin>
 
         </plugins>
